@@ -4,7 +4,7 @@
 
 > *English:* SlimeFPS is a standalone MelonLoader graphics-optimization mod for Slime Rancher 2: texture quality and streaming, LOD and draw distance, decor, post-effects, runtime FPS targets, two one-click presets and an FPS counter (FPS, frame ms, per-second peak). Settings open with **F8**. It is built from the same source as Creator Toolkit but does not require it; when both are installed, Creator Toolkit automatically disables its own optimization page and FPS counter, so nothing runs twice.
 
-**Автор:** [slitvin12](https://github.com/slitvin12) · **Версия:** 1.0.1 · Неофициальный фанатский мод, не связан с Monomi Park.
+**Автор:** [slitvin12](https://github.com/slitvin12) · **Версия:** 1.1.0 · Неофициальный фанатский мод, не связан с Monomi Park.
 
 ## Требования
 
@@ -20,7 +20,7 @@
 
    **Если F8 не нажимается и окно не открывается:** смените клавишу без окна — откройте блокнотом `<папка игры>\UserData\SlimeFPS\hotkey.cfg` (создаётся при первом запуске) и замените `menu.key=F8` на другую клавишу, например `menu.key=Home`, затем перезапустите игру. Подойдут имена клавиш Unity: `F2`–`F12`, буквы, цифры, `Home`, `End`, `PageUp`, `PageDown`, клавиши нумпада (`Keypad0`–`Keypad9`).
 
-Язык интерфейса следует языку игры (русский или английский). Настройки хранятся в `<папка игры>\UserData\SlimeFPS\` (выбор счётчика FPS — в `capture.cfg`).
+Язык интерфейса следует языку игры (9 языков игры: русский, английский, французский, немецкий, испанский, китайский, японский, корейский, португальский). Настройки хранятся в `<папка игры>\UserData\SlimeFPS\` (выбор счётчика FPS — в `capture.cfg`).
 
 ## Возможности
 
