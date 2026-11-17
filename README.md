@@ -2,9 +2,9 @@
 
 Оптимизация графики и счётчик FPS как отдельный мод на **MelonLoader**. Собран из того же исходного кода, что и [Creator Toolkit](https://github.com/slitvin12/SR2-CreatorToolkit), и работает **без него**.
 
-> *English:* SlimeFPS is a standalone MelonLoader graphics-optimization mod for Slime Rancher 2: texture quality and streaming, LOD and draw distance, decor, post-effects, runtime FPS targets, two one-click presets and an FPS counter (FPS, frame ms, per-second peak). Settings open with **F8**. It is built from the same source as Creator Toolkit but does not require it; when both are installed, Creator Toolkit automatically disables its own optimization page and FPS counter, so nothing runs twice.
+> *English:* SlimeFPS is a standalone MelonLoader graphics-optimization mod for Slime Rancher 2: texture quality and streaming, LOD and draw distance, decor, post-effects, runtime FPS targets, two one-click presets and an FPS counter (FPS, frame ms, per-second peak), compatible with Lycoreia 2.x co-op and Classic Slimes. Settings open with **F8**. It is built from the same source as Creator Toolkit but does not require it; when both are installed, Creator Toolkit automatically disables its own optimization page and FPS counter, so nothing runs twice.
 
-**Автор:** [slitvin12](https://github.com/slitvin12) · **Версия:** 1.1.0 · Неофициальный фанатский мод, не связан с Monomi Park.
+**Автор:** [slitvin12](https://github.com/slitvin12) · **Версия:** 1.1.1 · Неофициальный фанатский мод, не связан с Monomi Park.
 
 ## Требования
 
@@ -31,9 +31,15 @@
 
 Настройки графики временные: «Восстановить всё», смена сейва или выход из игры возвращают исходное состояние. Мод не содержит игровых читов и не меняет сохранения.
 
-## Совместимость с Creator Toolkit
+## Новое в 1.1.1
 
-Если рядом загружен [Creator Toolkit](https://github.com/slitvin12/SR2-CreatorToolkit), он сам отключает свою оптимизацию и счётчик FPS и показывает заметку о передаче управления на странице оптимизации. Двух счётчиков не бывает. Без Creator Toolkit SlimeFPS работает полностью самостоятельно.
+- **Кооператив Lycoreia 2.x.** При активном ограничении FPS в фоне сетевая сессия держит минимум **30 FPS**, чтобы при сворачивании окна не проседал обмен сетевыми пакетами. Клавиша настроек (`F8`) не срабатывает при открытом чате коопа или фокусе внешних полей ввода.
+- **Совместимость со Starlight.** Настройки SlimeFPS автоматически закрываются при открытии меню/консоли Starlight и не перехватывают ввод.
+- **Совместимость с Classic Slimes (1.3.5+).** В фильтре оптимизации частиц защищены ауры, блики, огонь и глитч-частицы классических слаймов (а в самом Classic Slimes сканлайны защищены от размытия при низких мип-уровнях текстур).
+
+## Совместимость с другими модами
+
+Если рядом загружен [Creator Toolkit](https://github.com/slitvin12/SR2-CreatorToolkit), он сам отключает свою оптимизацию и счётчик FPS и показывает заметку о передаче управления на странице оптимизации. Двух счётчиков не бывает. Без Creator Toolkit SlimeFPS работает полностью самостоятельно. Также проверена совместимость с **Lycoreia 2.x**, **Starlight**, **[Classic Slimes](https://github.com/slitvin12/ClassicSlimes)** и **[SlimeMap](https://github.com/slitvin12/SlimeMap)**.
 
 ## Исходный код
 
@@ -45,7 +51,7 @@
 
 ## Проверено
 
-Сборка: 0 предупреждений / 0 ошибок (net6.0). Офлайн-проверки общего кода: **5068 PASS**. Проверено в живой игре (2026-11-11): окно настроек открывается, клавиша меню переназначается кнопкой «изменить…» в шапке и через `hotkey.cfg`, 0 ошибок в логе. Совместная работа с Creator Toolkit и SlimeMap проверена 2026-11-10: один счётчик FPS.
+Сборка: 0 предупреждений / 0 ошибок (net6.0). Офлайн-проверки общего кода: **5114 PASS** + **20 оффлайн-проверок immutable-gate**. Живая проверка именно сборки 1.1.1 в коопе Lycoreia запланирована отдельно.
 
 ## Лицензия
 
